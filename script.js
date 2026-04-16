@@ -19,6 +19,24 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
   updateProgress();
+
+  // Lógica Accordion Opções Avançadas
+  const toggleBtn = document.getElementById("toggle-advanced");
+  const advancedDiv = document.getElementById("advanced-options");
+  const toggleIcon = document.getElementById("toggle-icon");
+  let advancedOpen = false;
+
+  toggleBtn.addEventListener("click", () => {
+    advancedOpen = !advancedOpen;
+    if (advancedOpen) {
+      advancedDiv.classList.remove("hidden");
+      gsap.fromTo(advancedDiv, { height: 0, opacity: 0 }, { height: "auto", opacity: 1, duration: 0.5, ease: "power2.out" });
+      gsap.to(toggleIcon, { rotation: 180, duration: 0.3 });
+    } else {
+      gsap.to(advancedDiv, { height: 0, opacity: 0, duration: 0.4, ease: "power2.in", onComplete: () => advancedDiv.classList.add("hidden") });
+      gsap.to(toggleIcon, { rotation: 0, duration: 0.3 });
+    }
+  });
 });
 
 // Sortable JS Setup

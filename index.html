@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="py-16 px-4">
     <div class="progress-bar-container">
@@ -264,55 +264,645 @@
             Selecione as seções e arraste para organizar a ordem desejada.
           </p>
 
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+          <!-- Seções Básicas -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+            <!-- Hero -->
             <label
-              class="flex items-center space-x-2 p-2 border rounded-lg cursor-pointer"
-              ><input type="checkbox" class="secao-checkbox" value="Hero" />
-              <span>Hero</span></label
+              class="flex items-center justify-between p-2 border rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
             >
+              <div class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="secao-checkbox w-4 h-4 text-indigo-600 rounded"
+                  value="Hero"
+                />
+                <span class="text-sm font-medium">Hero</span>
+              </div>
+              <div class="relative group inline-block">
+                <span
+                  class="text-gray-400 hover:text-indigo-600 cursor-help transition"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </span>
+                <div
+                  class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                >
+                  Seção de impacto inicial com sua promessa principal.
+                  <div
+                    class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                  ></div>
+                </div>
+              </div>
+            </label>
+            <!-- Sobre -->
             <label
-              class="flex items-center space-x-2 p-2 border rounded-lg cursor-pointer"
-              ><input type="checkbox" class="secao-checkbox" value="Sobre" />
-              <span>Sobre</span></label
+              class="flex items-center justify-between p-2 border rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
             >
+              <div class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="secao-checkbox w-4 h-4 text-indigo-600 rounded"
+                  value="Sobre"
+                />
+                <span class="text-sm font-medium">Sobre</span>
+              </div>
+              <div class="relative group inline-block">
+                <span
+                  class="text-gray-400 hover:text-indigo-600 cursor-help transition"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </span>
+                <div
+                  class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                >
+                  Espaço para contar sua história e gerar conexão.
+                  <div
+                    class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                  ></div>
+                </div>
+              </div>
+            </label>
+            <!-- Serviços -->
             <label
-              class="flex items-center space-x-2 p-2 border rounded-lg cursor-pointer"
-              ><input type="checkbox" class="secao-checkbox" value="Serviços" />
-              <span>Serviços</span></label
+              class="flex items-center justify-between p-2 border rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
             >
+              <div class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="secao-checkbox w-4 h-4 text-indigo-600 rounded"
+                  value="Serviços"
+                />
+                <span class="text-sm font-medium">Serviços</span>
+              </div>
+              <div class="relative group inline-block">
+                <span
+                  class="text-gray-400 hover:text-indigo-600 cursor-help transition"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </span>
+                <div
+                  class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                >
+                  Apresentação clara das suas soluções e ofertas.
+                  <div
+                    class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                  ></div>
+                </div>
+              </div>
+            </label>
+            <!-- FAQ -->
             <label
-              class="flex items-center space-x-2 p-2 border rounded-lg cursor-pointer"
-              ><input type="checkbox" class="secao-checkbox" value="Produtos" />
-              <span>Produtos</span></label
+              class="flex items-center justify-between p-2 border rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
             >
-            <label
-              class="flex items-center space-x-2 p-2 border rounded-lg cursor-pointer"
-              ><input
-                type="checkbox"
-                class="secao-checkbox"
-                value="Depoimentos"
-              />
-              <span>Depoimentos</span></label
+              <div class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="secao-checkbox w-4 h-4 text-indigo-600 rounded"
+                  value="FAQ"
+                />
+                <span class="text-sm font-medium">FAQ</span>
+              </div>
+              <div class="relative group inline-block">
+                <span
+                  class="text-gray-400 hover:text-indigo-600 cursor-help transition"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </span>
+                <div
+                  class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                >
+                  Dúvidas frequentes para quebrar as últimas objeções.
+                  <div
+                    class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                  ></div>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <!-- Gatilho para Opções Avançadas -->
+          <div class="mb-8">
+            <button
+              type="button"
+              id="toggle-advanced"
+              class="flex items-center text-indigo-600 font-bold text-sm hover:text-indigo-800 transition focus:outline-none py-2"
             >
-            <label
-              class="flex items-center space-x-2 p-2 border rounded-lg cursor-pointer"
-              ><input type="checkbox" class="secao-checkbox" value="FAQ" />
-              <span>FAQ</span></label
+              <span class="mr-1">⚙️ Opções avançadas (opcional)</span>
+              <svg
+                id="toggle-icon"
+                class="w-4 h-4 transform transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+
+            <div
+              id="advanced-options"
+              class="hidden bg-gray-50/50 rounded-xl"
             >
-            <label
-              class="flex items-center space-x-2 p-2 border rounded-lg cursor-pointer"
-              ><input
-                type="checkbox"
-                class="secao-checkbox"
-                value="Portfólio"
-              />
-              <span>Portfólio</span></label
-            >
-            <label
-              class="flex items-center space-x-2 p-2 border rounded-lg cursor-pointer"
-              ><input type="checkbox" class="secao-checkbox" value="Contato" />
-              <span>Contato</span></label
-            >
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-3 p-4">
+                <!-- Proposta de valor -->
+                <label
+                  class="flex items-center justify-between p-2 border bg-white rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
+                >
+                  <div
+                    class="flex items-center space-x-2 text-[11px] font-bold"
+                  >
+                    <input
+                      type="checkbox"
+                      class="secao-checkbox"
+                      value="Proposta de valor"
+                    />
+                    <span>Proposta de valor</span>
+                  </div>
+                  <div class="relative group inline-block">
+                    <span
+                      class="text-gray-400 hover:text-indigo-600 cursor-help"
+                      ><svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path></svg
+                    ></span>
+                    <div
+                      class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                    >
+                      Mensagem principal que mostra o que você oferece e o
+                      resultado que gera.
+                      <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                      ></div>
+                    </div>
+                  </div>
+                </label>
+                <!-- Como funciona -->
+                <label
+                  class="flex items-center justify-between p-2 border bg-white rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
+                >
+                  <div
+                    class="flex items-center space-x-2 text-[11px] font-bold"
+                  >
+                    <input
+                      type="checkbox"
+                      class="secao-checkbox"
+                      value="Como funciona"
+                    />
+                    <span>Como funciona</span>
+                  </div>
+                  <div class="relative group inline-block">
+                    <span
+                      class="text-gray-400 hover:text-indigo-600 cursor-help"
+                      ><svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path></svg
+                    ></span>
+                    <div
+                      class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                    >
+                      Explica o passo a passo do seu serviço ou mentoria.
+                      <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                      ></div>
+                    </div>
+                  </div>
+                </label>
+                <!-- Resultados / Cases -->
+                <label
+                  class="flex items-center justify-between p-2 border bg-white rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
+                >
+                  <div
+                    class="flex items-center space-x-2 text-[11px] font-bold"
+                  >
+                    <input
+                      type="checkbox"
+                      class="secao-checkbox"
+                      value="Resultados / Cases"
+                    />
+                    <span>Resultados / Cases</span>
+                  </div>
+                  <div class="relative group inline-block">
+                    <span
+                      class="text-gray-400 hover:text-indigo-600 cursor-help"
+                      ><svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path></svg
+                    ></span>
+                    <div
+                      class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                    >
+                      Mostra resultados reais de clientes (antes e depois,
+                      números, histórias).
+                      <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                      ></div>
+                    </div>
+                  </div>
+                </label>
+                <!-- Para quem é -->
+                <label
+                  class="flex items-center justify-between p-2 border bg-white rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
+                >
+                  <div
+                    class="flex items-center space-x-2 text-[11px] font-bold"
+                  >
+                    <input
+                      type="checkbox"
+                      class="secao-checkbox"
+                      value="Para quem é / Não é"
+                    />
+                    <span>Para quem é</span>
+                  </div>
+                  <div class="relative group inline-block">
+                    <span
+                      class="text-gray-400 hover:text-indigo-600 cursor-help"
+                      ><svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path></svg
+                    ></span>
+                    <div
+                      class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                    >
+                      Define o público ideal e evita clientes desqualificados.
+                      <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                      ></div>
+                    </div>
+                  </div>
+                </label>
+                <!-- Diferenciais -->
+                <label
+                  class="flex items-center justify-between p-2 border bg-white rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
+                >
+                  <div
+                    class="flex items-center space-x-2 text-[11px] font-bold"
+                  >
+                    <input
+                      type="checkbox"
+                      class="secao-checkbox"
+                      value="Diferenciais"
+                    />
+                    <span>Diferenciais</span>
+                  </div>
+                  <div class="relative group inline-block">
+                    <span
+                      class="text-gray-400 hover:text-indigo-600 cursor-help"
+                      ><svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path></svg
+                    ></span>
+                    <div
+                      class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                    >
+                      O que torna seu serviço único em relação aos concorrentes.
+                      <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                      ></div>
+                    </div>
+                  </div>
+                </label>
+                <!-- Planos -->
+                <label
+                  class="flex items-center justify-between p-2 border bg-white rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
+                >
+                  <div
+                    class="flex items-center space-x-2 text-[11px] font-bold"
+                  >
+                    <input
+                      type="checkbox"
+                      class="secao-checkbox"
+                      value="Planos / Investimento"
+                    />
+                    <span>Planos</span>
+                  </div>
+                  <div class="relative group inline-block">
+                    <span
+                      class="text-gray-400 hover:text-indigo-600 cursor-help"
+                      ><svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path></svg
+                    ></span>
+                    <div
+                      class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                    >
+                      Apresenta opções ou formas de contratação claras.
+                      <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                      ></div>
+                    </div>
+                  </div>
+                </label>
+                <!-- Autoridade -->
+                <label
+                  class="flex items-center justify-between p-2 border bg-white rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
+                >
+                  <div
+                    class="flex items-center space-x-2 text-[11px] font-bold"
+                  >
+                    <input
+                      type="checkbox"
+                      class="secao-checkbox"
+                      value="Autoridade"
+                    />
+                    <span>Autoridade</span>
+                  </div>
+                  <div class="relative group inline-block">
+                    <span
+                      class="text-gray-400 hover:text-indigo-600 cursor-help"
+                      ><svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path></svg
+                    ></span>
+                    <div
+                      class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                    >
+                      Mostra sua experiência, história e credibilidade (Mentor).
+                      <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                      ></div>
+                    </div>
+                  </div>
+                </label>
+                <!-- Vídeo -->
+                <label
+                  class="flex items-center justify-between p-2 border bg-white rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
+                >
+                  <div
+                    class="flex items-center space-x-2 text-[11px] font-bold"
+                  >
+                    <input
+                      type="checkbox"
+                      class="secao-checkbox"
+                      value="Vídeo de Apresentação"
+                    />
+                    <span>Vídeo</span>
+                  </div>
+                  <div class="relative group inline-block">
+                    <span
+                      class="text-gray-400 hover:text-indigo-600 cursor-help"
+                      ><svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path></svg
+                    ></span>
+                    <div
+                      class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                    >
+                      Vídeo explicando seu serviço ou se conectando com o
+                      cliente.
+                      <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                      ></div>
+                    </div>
+                  </div>
+                </label>
+                <!-- Captura de lead -->
+                <label
+                  class="flex items-center justify-between p-2 border bg-white rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
+                >
+                  <div
+                    class="flex items-center space-x-2 text-[11px] font-bold"
+                  >
+                    <input
+                      type="checkbox"
+                      class="secao-checkbox"
+                      value="Captura de Lead"
+                    />
+                    <span>Captura Lead</span>
+                  </div>
+                  <div class="relative group inline-block">
+                    <span
+                      class="text-gray-400 hover:text-indigo-600 cursor-help"
+                      ><svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path></svg
+                    ></span>
+                    <div
+                      class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                    >
+                      Oferece algo gratuito em troca de contato (ebook, aula,
+                      etc).
+                      <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                      ></div>
+                    </div>
+                  </div>
+                </label>
+                <!-- Urgência -->
+                <label
+                  class="flex items-center justify-between p-2 border bg-white rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
+                >
+                  <div
+                    class="flex items-center space-x-2 text-[11px] font-bold"
+                  >
+                    <input
+                      type="checkbox"
+                      class="secao-checkbox"
+                      value="Urgência / Escassez"
+                    />
+                    <span>Urgência</span>
+                  </div>
+                  <div class="relative group inline-block">
+                    <span
+                      class="text-gray-400 hover:text-indigo-600 cursor-help"
+                      ><svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path></svg
+                    ></span>
+                    <div
+                      class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                    >
+                      Cria senso de escassez (vagas limitadas, agenda cheia).
+                      <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                      ></div>
+                    </div>
+                  </div>
+                </label>
+                <!-- CTA Intermediário -->
+                <label
+                  class="flex items-center justify-between p-2 border bg-white rounded-lg cursor-pointer hover:bg-slate-50 transition group/item"
+                >
+                  <div
+                    class="flex items-center space-x-2 text-[11px] font-bold"
+                  >
+                    <input
+                      type="checkbox"
+                      class="secao-checkbox"
+                      value="CTA Intermediário"
+                    />
+                    <span>CTA Interm.</span>
+                  </div>
+                  <div class="relative group inline-block">
+                    <span
+                      class="text-gray-400 hover:text-indigo-600 cursor-help"
+                      ><svg
+                        class="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path></svg
+                    ></span>
+                    <div
+                      class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-gray-900 text-white text-[10px] rounded-xl shadow-xl opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+                    >
+                      Botões de ação ao longo da página (não só no final).
+                      <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900"
+                      ></div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
           </div>
 
           <div
